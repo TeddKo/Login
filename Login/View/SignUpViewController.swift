@@ -23,6 +23,8 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var forgotButton: UIButton!
+    
     @IBAction func loginAction(_ sender: Any) {
         dismiss(animated: true)
     }
@@ -31,11 +33,11 @@ class SignUpViewController: UIViewController {
 
         setButtonImage()
         setTextfieldStyle()
-        setLoginButtonStyle()
+        setButtonStyle()
 
     }
     
-    private func setLoginButtonStyle() {
+    private func setButtonStyle() {
         var config = UIButton.Configuration.plain()
         var attributes = AttributeContainer()
         
@@ -47,6 +49,12 @@ class SignUpViewController: UIViewController {
         config.contentInsets = .zero
         
         loginButton.configuration = config
+        
+        forgotButton.configuration = .plain()
+        forgotButton.configuration?.baseForegroundColor = UIColor.label
+        forgotButton.configuration?.contentInsets = .zero
+        attributes.font = .systemFont(ofSize: 15)
+        forgotButton.configuration?.attributedTitle = AttributedString("Forgot Password", attributes: attributes)
     }
     
     private func setTextfieldStyle() {

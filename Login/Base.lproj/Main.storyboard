@@ -157,14 +157,8 @@ of cool stuffs</string>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9En-2k-b5N">
-                                <rect key="frame" x="285" y="614.66666666666663" width="115" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVG-8j-Pa2">
-                                <rect key="frame" x="40" y="664.66666666666663" width="360" height="50"/>
+                                <rect key="frame" x="40" y="681" width="360" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="xOt-kc-vCg"/>
                                 </constraints>
@@ -181,7 +175,7 @@ of cool stuffs</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="38g-jV-enT">
-                                <rect key="frame" x="95.000000000000014" y="735.66666666666663" width="250.33333333333337" height="33.333333333333371"/>
+                                <rect key="frame" x="95.000000000000014" y="752" width="250.33333333333337" height="33.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uig-oc-n08">
                                         <rect key="frame" x="0.0" y="0.0" width="161" height="33.333333333333336"/>
@@ -203,13 +197,13 @@ of cool stuffs</string>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh9-Ff-neA">
-                                <rect key="frame" x="165.33333333333334" y="789" width="109.33333333333334" height="18"/>
+                                <rect key="frame" x="165.33333333333334" y="805.33333333333337" width="109.33333333333334" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zwC-Fi-Xhn">
-                                <rect key="frame" x="170" y="822" width="100" height="20"/>
+                                <rect key="frame" x="170" y="838.33333333333337" width="100" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-Yq-ob7">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="20"/>
@@ -232,6 +226,11 @@ of cool stuffs</string>
                                     <constraint firstAttribute="width" constant="100" id="cKx-JO-meU"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usK-Qd-faN">
+                                <rect key="frame" x="325" y="614.66666666666663" width="75" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1U5-P9-dzz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -242,15 +241,15 @@ of cool stuffs</string>
                             <constraint firstItem="Tue-jb-VjO" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="Dno-ct-xkr"/>
                             <constraint firstItem="tqc-R5-OhJ" firstAttribute="leading" secondItem="1U5-P9-dzz" secondAttribute="leading" constant="40" id="Fgu-yc-VVk"/>
                             <constraint firstItem="8Wj-No-5V9" firstAttribute="top" secondItem="KiP-Ci-Qe8" secondAttribute="bottom" constant="10" id="PKV-JS-pKA"/>
-                            <constraint firstItem="9En-2k-b5N" firstAttribute="trailing" secondItem="KEH-dA-o2H" secondAttribute="trailing" id="RST-hk-4OH"/>
+                            <constraint firstItem="usK-Qd-faN" firstAttribute="trailing" secondItem="KEH-dA-o2H" secondAttribute="trailing" id="Q8z-Ba-Ysv"/>
+                            <constraint firstItem="GVG-8j-Pa2" firstAttribute="top" secondItem="usK-Qd-faN" secondAttribute="bottom" constant="32" id="Xgt-h1-Gvn"/>
                             <constraint firstItem="zwC-Fi-Xhn" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="Y4L-f0-iXA"/>
-                            <constraint firstItem="GVG-8j-Pa2" firstAttribute="top" secondItem="9En-2k-b5N" secondAttribute="bottom" constant="32" id="ZZC-y9-Rkb"/>
                             <constraint firstItem="8Wj-No-5V9" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="lC2-Ng-2Sr"/>
                             <constraint firstItem="1U5-P9-dzz" firstAttribute="trailing" secondItem="GVG-8j-Pa2" secondAttribute="trailing" constant="40" id="o4n-NJ-bwN"/>
                             <constraint firstItem="38g-jV-enT" firstAttribute="top" secondItem="GVG-8j-Pa2" secondAttribute="bottom" constant="21" id="pYd-2x-BdH"/>
                             <constraint firstItem="zwC-Fi-Xhn" firstAttribute="top" secondItem="kh9-Ff-neA" secondAttribute="bottom" constant="15" id="poD-7X-YvE"/>
+                            <constraint firstItem="usK-Qd-faN" firstAttribute="top" secondItem="KEH-dA-o2H" secondAttribute="bottom" constant="15" id="sUm-iQ-1G5"/>
                             <constraint firstItem="GVG-8j-Pa2" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="tae-zs-pMC"/>
-                            <constraint firstItem="9En-2k-b5N" firstAttribute="top" secondItem="KEH-dA-o2H" secondAttribute="bottom" constant="14.999999999999886" id="toC-Ld-hjj"/>
                             <constraint firstItem="KiP-Ci-Qe8" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="uNu-De-8Nq"/>
                             <constraint firstItem="GVG-8j-Pa2" firstAttribute="leading" secondItem="1U5-P9-dzz" secondAttribute="leading" constant="40" id="w4e-dO-bZg"/>
                             <constraint firstItem="38g-jV-enT" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="wEk-kE-IdI"/>
@@ -263,6 +262,7 @@ of cool stuffs</string>
                     <connections>
                         <outlet property="emailTextField" destination="U5D-Ou-uS0" id="o6D-ZS-sc5"/>
                         <outlet property="facebookButton" destination="Oov-Yq-ob7" id="ZQX-md-2G4"/>
+                        <outlet property="forgotButton" destination="usK-Qd-faN" id="FzX-h6-ppJ"/>
                         <outlet property="linkedinButton" destination="vy6-EX-BZf" id="JoW-uI-XcJ"/>
                         <outlet property="passwordTextField" destination="KEH-dA-o2H" id="PoW-xN-Wh6"/>
                         <outlet property="signupButton" destination="eTT-IU-yUC" id="1Vc-Dq-xeE"/>
@@ -331,14 +331,8 @@ of cool stuffs</string>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qII-bD-i2b">
-                                <rect key="frame" x="285" y="592.66666666666663" width="115" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RE1-ww-aMM">
-                                <rect key="frame" x="40" y="642.66666666666663" width="360" height="50"/>
+                                <rect key="frame" x="40" y="659" width="360" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JPH-cR-kvq"/>
                                 </constraints>
@@ -355,7 +349,7 @@ of cool stuffs</string>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Odl-CJ-lqz">
-                                <rect key="frame" x="101.66666666666669" y="712.66666666666663" width="237" height="33.333333333333371"/>
+                                <rect key="frame" x="101.66666666666669" y="729" width="237" height="33.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TID-um-TrN">
                                         <rect key="frame" x="0.0" y="0.0" width="161" height="33.333333333333336"/>
@@ -377,7 +371,7 @@ of cool stuffs</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aJz-IR-5ZM">
-                                <rect key="frame" x="170" y="799" width="100" height="20"/>
+                                <rect key="frame" x="170" y="815.33333333333337" width="100" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et9-Ek-xuA">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="20"/>
@@ -401,34 +395,39 @@ of cool stuffs</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgY-AJ-ehD">
-                                <rect key="frame" x="165.33333333333334" y="766" width="109.33333333333334" height="18"/>
+                                <rect key="frame" x="165.33333333333334" y="782.33333333333337" width="109.33333333333334" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nV-l2-15j">
+                                <rect key="frame" x="325" y="592.66666666666663" width="75" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4BT-OS-NL4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aJz-IR-5ZM" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="0kH-1V-0Xp"/>
-                            <constraint firstItem="qII-bD-i2b" firstAttribute="trailing" secondItem="LoQ-9g-LfU" secondAttribute="trailing" id="AHh-Pk-1kf"/>
                             <constraint firstItem="Mua-ex-mz6" firstAttribute="top" secondItem="lU1-gv-qRk" secondAttribute="bottom" constant="30" id="CuK-uf-nh2"/>
                             <constraint firstItem="bTf-b9-yH9" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="GcL-sM-4TB"/>
                             <constraint firstItem="hzB-Ju-Y1W" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="H0N-NV-seU"/>
                             <constraint firstItem="hzB-Ju-Y1W" firstAttribute="top" secondItem="Mua-ex-mz6" secondAttribute="bottom" constant="10" id="JfP-sZ-h2F"/>
                             <constraint firstItem="Odl-CJ-lqz" firstAttribute="top" secondItem="RE1-ww-aMM" secondAttribute="bottom" constant="20" id="Jyy-Yy-LtP"/>
-                            <constraint firstItem="qII-bD-i2b" firstAttribute="top" secondItem="LoQ-9g-LfU" secondAttribute="bottom" constant="15" id="KLd-wY-e18"/>
-                            <constraint firstItem="RE1-ww-aMM" firstAttribute="top" secondItem="qII-bD-i2b" secondAttribute="bottom" constant="32" id="NME-W5-VTj"/>
                             <constraint firstItem="SgY-AJ-ehD" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="O1i-Ux-3Bg"/>
                             <constraint firstItem="4BT-OS-NL4" firstAttribute="trailing" secondItem="RE1-ww-aMM" secondAttribute="trailing" constant="40" id="VYc-IV-Sjp"/>
                             <constraint firstItem="Mua-ex-mz6" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="WDb-eq-eVY"/>
                             <constraint firstItem="aJz-IR-5ZM" firstAttribute="top" secondItem="SgY-AJ-ehD" secondAttribute="bottom" constant="15" id="YVo-IY-rle"/>
                             <constraint firstItem="RE1-ww-aMM" firstAttribute="leading" secondItem="4BT-OS-NL4" secondAttribute="leading" constant="40" id="Yqz-sj-Bfk"/>
+                            <constraint firstItem="RE1-ww-aMM" firstAttribute="top" secondItem="9nV-l2-15j" secondAttribute="bottom" constant="32" id="bxD-LS-oMU"/>
+                            <constraint firstItem="9nV-l2-15j" firstAttribute="top" secondItem="LoQ-9g-LfU" secondAttribute="bottom" constant="15" id="ehO-s1-8ZN"/>
                             <constraint firstItem="lU1-gv-qRk" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="iBo-Cm-ay6"/>
                             <constraint firstItem="RE1-ww-aMM" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="rqU-Kc-UR5"/>
                             <constraint firstItem="bTf-b9-yH9" firstAttribute="leading" secondItem="4BT-OS-NL4" secondAttribute="leading" constant="40" id="sIE-VI-uap"/>
                             <constraint firstItem="Odl-CJ-lqz" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="uCa-eJ-bQ2"/>
                             <constraint firstItem="bTf-b9-yH9" firstAttribute="top" secondItem="hzB-Ju-Y1W" secondAttribute="bottom" constant="30" id="wDw-nw-lSY"/>
+                            <constraint firstItem="9nV-l2-15j" firstAttribute="trailing" secondItem="LoQ-9g-LfU" secondAttribute="trailing" id="wNv-5N-aVf"/>
                             <constraint firstItem="lU1-gv-qRk" firstAttribute="top" secondItem="4BT-OS-NL4" secondAttribute="top" constant="80" id="wh5-vR-FeS"/>
                             <constraint firstItem="SgY-AJ-ehD" firstAttribute="top" secondItem="Odl-CJ-lqz" secondAttribute="bottom" constant="20" id="zLL-cY-ooC"/>
                             <constraint firstItem="4BT-OS-NL4" firstAttribute="trailing" secondItem="bTf-b9-yH9" secondAttribute="trailing" constant="40" id="znw-Sm-yE1"/>
@@ -438,6 +437,7 @@ of cool stuffs</string>
                     <connections>
                         <outlet property="emailField" destination="Fmr-jB-zjY" id="HwN-ee-tp6"/>
                         <outlet property="facebookButton" destination="et9-Ek-xuA" id="ZId-yT-6ZC"/>
+                        <outlet property="forgotButton" destination="9nV-l2-15j" id="pFf-32-kgq"/>
                         <outlet property="linkedinButton" destination="FBQ-IG-ad8" id="pR4-yM-eAh"/>
                         <outlet property="loginButton" destination="l6M-qf-TkU" id="5EB-uV-ZjP"/>
                         <outlet property="nameField" destination="VDL-BJ-hm5" id="hZP-jz-UYJ"/>

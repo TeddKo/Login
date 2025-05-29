@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
    
     @IBOutlet weak var signupButton: UIButton!
     
+    @IBOutlet weak var forgotButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class LoginViewController: UIViewController {
         
         setButtonImage()
         setTextfieldStyle()
-        setSignupButtonStyle()
+        setButtonStyle()
         
     }
     
@@ -38,7 +39,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
-    private func setSignupButtonStyle() {
+    private func setButtonStyle() {
         var config = UIButton.Configuration.plain()
         var attributes = AttributeContainer()
         
@@ -50,6 +51,12 @@ class LoginViewController: UIViewController {
         config.contentInsets = .zero
         
         signupButton.configuration = config
+        
+        forgotButton.configuration = .plain()
+        forgotButton.configuration?.baseForegroundColor = UIColor.label
+        forgotButton.configuration?.contentInsets = .zero
+        attributes.font = .systemFont(ofSize: 15)
+        forgotButton.configuration?.attributedTitle = AttributedString("Forgot Password", attributes: attributes)
     }
     
     private func setTextfieldStyle() {
