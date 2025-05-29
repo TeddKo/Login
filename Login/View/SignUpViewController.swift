@@ -8,23 +8,15 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
     @IBOutlet weak var facebookButton: UIButton!
-        
     @IBOutlet weak var twitterButton: UIButton!
-    
     @IBOutlet weak var linkedinButton: UIButton!
-    
     @IBOutlet weak var nameField: UITextField!
-    
     @IBOutlet weak var emailField: UITextField!
-    
     @IBOutlet weak var loginButton: UIButton!
-    
     @IBOutlet weak var passwordField: UITextField!
-    
     @IBOutlet weak var forgotButton: UIButton!
-    
     @IBOutlet weak var mainLoginButton: UIButton!
     
     @IBAction func forgotAction(_ sender: Any) {
@@ -33,13 +25,44 @@ class SignUpViewController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
         dismiss(animated: true)
     }
+    @IBAction func mainLoginAction(_ sender: UIButton) {
+        guard let name = nameField.text else { return }
+        guard let email = emailField.text else { return }
+        guard let password = passwordField.text else { return }
+        
+        print(#function, "SignUpView LoginButton Name: \(name) Email: \(email), Password: \(password)")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setButtonImage()
         setTextfieldStyle()
         setButtonStyle()
-
+        setupTextFieldActions()
+        setupDelegates()
+        updateLoginButtonState()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        nameField.becomeFirstResponder()
+    }
+    
+    private func setupDelegates() {
+        nameField.delegate = self
+        emailField.delegate = self
+        passwordField.delegate = self
+    }
+    
+    private func setupTextFieldActions() {
+        nameField.addTarget(self, action: #selector(textFielddidChange), for: .editingChanged)
+        emailField.addTarget(self, action: #selector(textFielddidChange), for: .editingChanged)
+        passwordField.addTarget(self, action: #selector(textFielddidChange), for: .editingChanged)
+    }
+    
+    @objc private func textFielddidChange() {
+        updateLoginButtonState()
     }
     
     private func setButtonStyle() {
@@ -60,6 +83,8 @@ class SignUpViewController: UIViewController {
         forgotButton.configuration?.contentInsets = .zero
         attributes.font = .systemFont(ofSize: 15)
         forgotButton.configuration?.attributedTitle = AttributedString("Forgot Password", attributes: attributes)
+        
+        mainLoginButton.isEnabled = false
     }
     
     private func setTextfieldStyle() {
@@ -95,11 +120,46 @@ class SignUpViewController: UIViewController {
         twitterButton.translatesAutoresizingMaskIntoConstraints = false
         linkedinButton.translatesAutoresizingMaskIntoConstraints = false
         
-        let facebookImage = UIImage(named: "FaceBook")?.resizeImage(size: CGSize(width: 20, height: 20))
-        let twitterImage = UIImage(named: "Twitter")?.resizeImage(size: CGSize(width: 20, height: 20))
-        let linkedInImage = UIImage(named: "LinkedIn")?.resizeImage(size: CGSize(width: 20, height: 20))
+        let facebookImage = UIImage(named: "facebook")?.resizeImage(size: CGSize(width: 20, height: 20))
+        let twitterImage = UIImage(named: "twitter")?.resizeImage(size: CGSize(width: 20, height: 20))
+        let linkedInImage = UIImage(named: "linkedin")?.resizeImage(size: CGSize(width: 20, height: 20))
         facebookButton.setImage(facebookImage, for: .normal)
         twitterButton.setImage(twitterImage, for: .normal)
         linkedinButton.setImage(linkedInImage, for: .normal)
+    }
+    
+    private func isValidName(_ name: String) -> Bool {
+        guard name.count >= 2 && name.count <= 5 else { return false }
+        let nameRegEx = "^[ㄱ-ㅎㅏ-ㅣ가-힣a-zA-Z]+$"
+        let namePred = NSPredicate(format: "SELF MATCHES %@", nameRegEx)
+        return namePred.evaluate(with: name)
+    }
+    
+    private func updateLoginButtonState() {
+        guard let name = nameField.text else { return }
+        guard let email = emailField.text else { return }
+        guard let password = passwordField.text else { return }
+        
+        let isNameValid = isValidName(name)
+        let isEmailVAlid = isValidEmail(email)
+        let isPasswordValid = isValidPassword(password)
+        
+        mainLoginButton.isEnabled = isNameValid && isEmailVAlid && isPasswordValid
+    }
+}
+
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == nameField {
+            emailField.becomeFirstResponder()
+        } else if textField == emailField {
+            passwordField.becomeFirstResponder()
+        } else if textField == passwordField {
+            if mainLoginButton.isEnabled {
+                mainLoginAction(mainLoginButton)
+            }
+            textField.resignFirstResponder()
+        }
+        return true
     }
 }

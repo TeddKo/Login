@@ -153,7 +153,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="Kyo-ss-O4e"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -173,6 +173,9 @@ of cool stuffs</string>
                                         <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="WyY-eR-K8K" eventType="touchUpInside" id="GIS-nZ-hK5"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="38g-jV-enT">
                                 <rect key="frame" x="95.000000000000014" y="752" width="250.33333333333337" height="33.333333333333371"/>
@@ -315,7 +318,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="AYH-bO-APX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="name"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fmr-jB-zjY">
                                         <rect key="frame" x="0.0" y="70" width="360" height="50"/>
@@ -323,7 +326,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="dPM-xf-F5Q"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-9g-LfU">
                                         <rect key="frame" x="0.0" y="139.99999999999994" width="360" height="50"/>
@@ -331,7 +334,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="rqJ-Bv-AJV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -351,6 +354,9 @@ of cool stuffs</string>
                                         <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mainLoginAction:" destination="t2B-XW-T0p" eventType="touchUpInside" id="UpR-cw-GGD"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Odl-CJ-lqz">
                                 <rect key="frame" x="101.66666666666669" y="729" width="237" height="33.333333333333371"/>
@@ -369,7 +375,7 @@ of cool stuffs</string>
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="loginAction:" destination="t2B-XW-T0p" eventType="touchUpInside" id="sMc-I2-Dm1"/>
+                                            <action selector="loginAction:" destination="t2B-XW-T0p" eventType="touchUpInside" id="BzK-Zp-Uym"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -446,7 +452,8 @@ of cool stuffs</string>
                         <outlet property="facebookButton" destination="et9-Ek-xuA" id="ZId-yT-6ZC"/>
                         <outlet property="forgotButton" destination="9nV-l2-15j" id="pFf-32-kgq"/>
                         <outlet property="linkedinButton" destination="FBQ-IG-ad8" id="pR4-yM-eAh"/>
-                        <outlet property="mainLoginButton" destination="RE1-ww-aMM" id="BqF-Jb-bAd"/>
+                        <outlet property="loginButton" destination="l6M-qf-TkU" id="c4C-S9-GHz"/>
+                        <outlet property="mainLoginButton" destination="RE1-ww-aMM" id="fVy-Up-wek"/>
                         <outlet property="nameField" destination="VDL-BJ-hm5" id="hZP-jz-UYJ"/>
                         <outlet property="passwordField" destination="LoQ-9g-LfU" id="gb4-oj-PGU"/>
                         <outlet property="twitterButton" destination="AQO-Fx-UZD" id="Gpr-yu-qOk"/>
