@@ -80,7 +80,7 @@ class LoginViewController: UIViewController {
         forgotButton.configuration = .plain()
         forgotButton.configuration?.baseForegroundColor = UIColor.label
         forgotButton.configuration?.contentInsets = .zero
-        attributes.font = .systemFont(ofSize: 15)
+        attributes.font = .systemFont(ofSize: 13)
         forgotButton.configuration?.attributedTitle = AttributedString("Forgot Password", attributes: attributes)
 
         loginButton.isEnabled = false
@@ -104,6 +104,22 @@ class LoginViewController: UIViewController {
 
         emailTextField.layer.masksToBounds = true
         passwordTextField.layer.masksToBounds = true
+        
+        let emailLeftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: emailTextField.frame.height))
+        emailTextField.leftView = emailLeftPaddingView
+        emailTextField.leftViewMode = .always
+
+        let emailRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: emailTextField.frame.height))
+        emailTextField.rightView = emailRightPaddingView
+        emailTextField.rightViewMode = .always
+        
+        let passwordLeftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: passwordTextField.frame.height))
+        passwordTextField.leftView = passwordLeftPaddingView
+        passwordTextField.leftViewMode = .always
+        
+        let passwordRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: passwordTextField.frame.height))
+        passwordTextField.rightView = passwordRightPaddingView
+        passwordTextField.rightViewMode = .always
     }
 
     private func setButtonImage() {

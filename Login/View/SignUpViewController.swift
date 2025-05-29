@@ -81,7 +81,7 @@ class SignUpViewController: UIViewController {
         forgotButton.configuration = .plain()
         forgotButton.configuration?.baseForegroundColor = UIColor.label
         forgotButton.configuration?.contentInsets = .zero
-        attributes.font = .systemFont(ofSize: 15)
+        attributes.font = .systemFont(ofSize: 13)
         forgotButton.configuration?.attributedTitle = AttributedString("Forgot Password", attributes: attributes)
         
         mainLoginButton.isEnabled = false
@@ -113,6 +113,30 @@ class SignUpViewController: UIViewController {
         nameField.layer.masksToBounds = true
         emailField.layer.masksToBounds = true
         passwordField.layer.masksToBounds = true
+        
+        let nameLeftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: emailField.frame.height))
+        nameField.leftView = nameLeftPaddingView
+        nameField.leftViewMode = .always
+
+        let nameRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: emailField.frame.height))
+        nameField.rightView = nameRightPaddingView
+        nameField.rightViewMode = .always
+        
+        let emailLeftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: emailField.frame.height))
+        emailField.leftView = emailLeftPaddingView
+        emailField.leftViewMode = .always
+
+        let emailRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: emailField.frame.height))
+        emailField.rightView = emailRightPaddingView
+        emailField.rightViewMode = .always
+        
+        let passwordLeftPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: passwordField.frame.height))
+        passwordField.leftView = passwordLeftPaddingView
+        passwordField.leftViewMode = .always
+        
+        let passwordRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: passwordField.frame.height))
+        passwordField.rightView = passwordRightPaddingView
+        passwordField.rightViewMode = .always
     }
     
     private func setButtonImage() {

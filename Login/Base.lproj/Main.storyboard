@@ -116,7 +116,7 @@ of cool stuffs</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wheel" translatesAutoresizingMaskIntoConstraints="NO" id="Tue-jb-VjO">
-                                <rect key="frame" x="170" y="218" width="100" height="100"/>
+                                <rect key="frame" x="170" y="288" width="100" height="100"/>
                                 <color key="tintColor" red="0.067494623360000006" green="0.3049625158" blue="0.56810635330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ATM-1W-2hN"/>
@@ -125,19 +125,19 @@ of cool stuffs</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiP-Ci-Qe8">
-                                <rect key="frame" x="148" y="378" width="144.33333333333337" height="33.666666666666686"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <rect key="frame" x="158.33333333333334" y="448" width="123.33333333333334" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.067494623360000006" green="0.3049625158" blue="0.56810635330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login to continue using our app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wj-No-5V9">
-                                <rect key="frame" x="89.666666666666686" y="421.66666666666669" width="261" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="120.00000000000001" y="486.66666666666669" width="200.33333333333337" height="13.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tqc-R5-OhJ">
-                                <rect key="frame" x="40" y="479.66666666666674" width="360" height="120"/>
+                                <rect key="frame" x="40" y="540" width="360" height="120"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-Ou-uS0">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
@@ -148,7 +148,7 @@ of cool stuffs</string>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-dA-o2H">
-                                        <rect key="frame" x="0.0" y="69.999999999999943" width="360" height="50"/>
+                                        <rect key="frame" x="0.0" y="70" width="360" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Kyo-ss-O4e"/>
                                         </constraints>
@@ -158,7 +158,7 @@ of cool stuffs</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVG-8j-Pa2">
-                                <rect key="frame" x="40" y="681" width="360" height="50"/>
+                                <rect key="frame" x="40" y="741.33333333333337" width="360" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="xOt-kc-vCg"/>
                                 </constraints>
@@ -178,7 +178,7 @@ of cool stuffs</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="38g-jV-enT">
-                                <rect key="frame" x="95.000000000000014" y="752" width="250.33333333333337" height="33.333333333333371"/>
+                                <rect key="frame" x="95.000000000000014" y="812.33333333333337" width="250.33333333333337" height="33.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uig-oc-n08">
                                         <rect key="frame" x="0.0" y="0.0" width="161" height="33.333333333333336"/>
@@ -200,13 +200,13 @@ of cool stuffs</string>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh9-Ff-neA">
-                                <rect key="frame" x="165.33333333333334" y="805.33333333333337" width="109.33333333333334" height="18"/>
+                                <rect key="frame" x="165.33333333333334" y="865.66666666666663" width="109.33333333333334" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zwC-Fi-Xhn">
-                                <rect key="frame" x="170" y="838.33333333333337" width="100" height="20"/>
+                                <rect key="frame" x="170" y="898.66666666666663" width="100" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-Yq-ob7">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="20"/>
@@ -230,7 +230,7 @@ of cool stuffs</string>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usK-Qd-faN">
-                                <rect key="frame" x="325" y="614.66666666666663" width="75" height="34.333333333333371"/>
+                                <rect key="frame" x="315" y="675" width="75" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -243,11 +243,11 @@ of cool stuffs</string>
                         <constraints>
                             <constraint firstItem="tqc-R5-OhJ" firstAttribute="top" secondItem="8Wj-No-5V9" secondAttribute="bottom" constant="40" id="1F7-sA-AoK"/>
                             <constraint firstItem="KiP-Ci-Qe8" firstAttribute="top" secondItem="Tue-jb-VjO" secondAttribute="bottom" constant="60" id="35x-Rc-Qw0"/>
-                            <constraint firstItem="Tue-jb-VjO" firstAttribute="top" secondItem="1U5-P9-dzz" secondAttribute="top" constant="50" id="6nu-8J-vCy"/>
+                            <constraint firstItem="Tue-jb-VjO" firstAttribute="top" secondItem="1U5-P9-dzz" secondAttribute="top" constant="120" id="6nu-8J-vCy"/>
                             <constraint firstItem="Tue-jb-VjO" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="Dno-ct-xkr"/>
                             <constraint firstItem="tqc-R5-OhJ" firstAttribute="leading" secondItem="1U5-P9-dzz" secondAttribute="leading" constant="40" id="Fgu-yc-VVk"/>
                             <constraint firstItem="8Wj-No-5V9" firstAttribute="top" secondItem="KiP-Ci-Qe8" secondAttribute="bottom" constant="10" id="PKV-JS-pKA"/>
-                            <constraint firstItem="usK-Qd-faN" firstAttribute="trailing" secondItem="KEH-dA-o2H" secondAttribute="trailing" id="Q8z-Ba-Ysv"/>
+                            <constraint firstItem="usK-Qd-faN" firstAttribute="trailing" secondItem="KEH-dA-o2H" secondAttribute="trailing" constant="-10" id="Q8z-Ba-Ysv"/>
                             <constraint firstItem="GVG-8j-Pa2" firstAttribute="top" secondItem="usK-Qd-faN" secondAttribute="bottom" constant="32" id="Xgt-h1-Gvn"/>
                             <constraint firstItem="zwC-Fi-Xhn" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="Y4L-f0-iXA"/>
                             <constraint firstItem="8Wj-No-5V9" firstAttribute="centerX" secondItem="LCf-ix-027" secondAttribute="centerX" id="lC2-Ng-2Sr"/>
@@ -298,19 +298,19 @@ of cool stuffs</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mua-ex-mz6">
-                                <rect key="frame" x="136.66666666666666" y="296" width="166.99999999999997" height="33.666666666666686"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <rect key="frame" x="148.66666666666669" y="296" width="142.66666666666669" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.067494623360000006" green="0.3049625158" blue="0.56810635330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill te details and create account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzB-Ju-Y1W">
-                                <rect key="frame" x="86.333333333333343" y="339.66666666666669" width="267.66666666666663" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="117" y="334.66666666666669" width="206" height="13.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bTf-b9-yH9">
-                                <rect key="frame" x="40" y="387.66666666666669" width="360" height="190.00000000000006"/>
+                                <rect key="frame" x="40" y="378" width="360" height="190"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDL-BJ-hm5">
                                         <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
@@ -329,7 +329,7 @@ of cool stuffs</string>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-9g-LfU">
-                                        <rect key="frame" x="0.0" y="139.99999999999994" width="360" height="50"/>
+                                        <rect key="frame" x="0.0" y="140" width="360" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="rqJ-Bv-AJV"/>
                                         </constraints>
@@ -338,8 +338,8 @@ of cool stuffs</string>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RE1-ww-aMM">
-                                <rect key="frame" x="40" y="658" width="360" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RE1-ww-aMM">
+                                <rect key="frame" x="40" y="649.33333333333337" width="360" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JPH-cR-kvq"/>
                                 </constraints>
@@ -359,7 +359,7 @@ of cool stuffs</string>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Odl-CJ-lqz">
-                                <rect key="frame" x="101.66666666666669" y="729" width="237" height="33.333333333333371"/>
+                                <rect key="frame" x="101.66666666666669" y="719.33333333333337" width="237" height="33.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TID-um-TrN">
                                         <rect key="frame" x="0.0" y="0.0" width="161" height="33.333333333333336"/>
@@ -381,7 +381,7 @@ of cool stuffs</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="aJz-IR-5ZM">
-                                <rect key="frame" x="170" y="815.33333333333337" width="100" height="20"/>
+                                <rect key="frame" x="170" y="805.66666666666663" width="100" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et9-Ek-xuA">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="20"/>
@@ -405,13 +405,13 @@ of cool stuffs</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or connect with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgY-AJ-ehD">
-                                <rect key="frame" x="165.33333333333334" y="782.33333333333337" width="109.33333333333334" height="18"/>
+                                <rect key="frame" x="165.33333333333334" y="772.66666666666663" width="109.33333333333334" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nV-l2-15j">
-                                <rect key="frame" x="325" y="592.66666666666663" width="75" height="34.333333333333371"/>
+                                <rect key="frame" x="315" y="583" width="75" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -440,7 +440,7 @@ of cool stuffs</string>
                             <constraint firstItem="bTf-b9-yH9" firstAttribute="leading" secondItem="4BT-OS-NL4" secondAttribute="leading" constant="40" id="sIE-VI-uap"/>
                             <constraint firstItem="Odl-CJ-lqz" firstAttribute="centerX" secondItem="JQt-hU-QT4" secondAttribute="centerX" id="uCa-eJ-bQ2"/>
                             <constraint firstItem="bTf-b9-yH9" firstAttribute="top" secondItem="hzB-Ju-Y1W" secondAttribute="bottom" constant="30" id="wDw-nw-lSY"/>
-                            <constraint firstItem="9nV-l2-15j" firstAttribute="trailing" secondItem="LoQ-9g-LfU" secondAttribute="trailing" id="wNv-5N-aVf"/>
+                            <constraint firstItem="9nV-l2-15j" firstAttribute="trailing" secondItem="LoQ-9g-LfU" secondAttribute="trailing" constant="-10" id="wNv-5N-aVf"/>
                             <constraint firstItem="lU1-gv-qRk" firstAttribute="top" secondItem="4BT-OS-NL4" secondAttribute="top" constant="80" id="wh5-vR-FeS"/>
                             <constraint firstItem="SgY-AJ-ehD" firstAttribute="top" secondItem="Odl-CJ-lqz" secondAttribute="bottom" constant="20" id="zLL-cY-ooC"/>
                             <constraint firstItem="4BT-OS-NL4" firstAttribute="trailing" secondItem="bTf-b9-yH9" secondAttribute="trailing" constant="40" id="znw-Sm-yE1"/>
