@@ -145,7 +145,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="XbD-ae-dxZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEH-dA-o2H">
                                         <rect key="frame" x="0.0" y="69.999999999999943" width="360" height="50"/>
@@ -153,7 +153,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="Kyo-ss-O4e"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -311,7 +311,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="AYH-bO-APX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fmr-jB-zjY">
                                         <rect key="frame" x="0.0" y="70" width="360" height="50"/>
@@ -319,7 +319,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="dPM-xf-F5Q"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LoQ-9g-LfU">
                                         <rect key="frame" x="0.0" y="139.99999999999994" width="360" height="50"/>
@@ -327,7 +327,7 @@ of cool stuffs</string>
                                             <constraint firstAttribute="height" constant="50" id="rqJ-Bv-AJV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
                             </stackView>
