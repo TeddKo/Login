@@ -22,6 +22,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var forgotButton: UIButton!
     
+    @IBOutlet weak var loginButton: UIButton!
+    
+    @IBAction func forgotAction(_ sender: Any) {
+        print(#function, "LoginView Forgot Password")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

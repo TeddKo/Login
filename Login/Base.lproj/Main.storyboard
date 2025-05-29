@@ -230,6 +230,9 @@ of cool stuffs</string>
                                 <rect key="frame" x="325" y="614.66666666666663" width="75" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="forgotAction:" destination="WyY-eR-K8K" eventType="touchUpInside" id="dk9-TM-zMy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1U5-P9-dzz"/>
@@ -264,6 +267,7 @@ of cool stuffs</string>
                         <outlet property="facebookButton" destination="Oov-Yq-ob7" id="ZQX-md-2G4"/>
                         <outlet property="forgotButton" destination="usK-Qd-faN" id="FzX-h6-ppJ"/>
                         <outlet property="linkedinButton" destination="vy6-EX-BZf" id="JoW-uI-XcJ"/>
+                        <outlet property="loginButton" destination="GVG-8j-Pa2" id="DKg-pz-bje"/>
                         <outlet property="passwordTextField" destination="KEH-dA-o2H" id="PoW-xN-Wh6"/>
                         <outlet property="signupButton" destination="eTT-IU-yUC" id="1Vc-Dq-xeE"/>
                         <outlet property="twitterButton" destination="GuB-5I-GcM" id="KlB-GN-ciw"/>
@@ -331,8 +335,8 @@ of cool stuffs</string>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RE1-ww-aMM">
-                                <rect key="frame" x="40" y="659" width="360" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RE1-ww-aMM">
+                                <rect key="frame" x="40" y="658" width="360" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JPH-cR-kvq"/>
                                 </constraints>
@@ -404,6 +408,9 @@ of cool stuffs</string>
                                 <rect key="frame" x="325" y="592.66666666666663" width="75" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="forgotAction:" destination="t2B-XW-T0p" eventType="touchUpInside" id="4eS-gp-H28"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4BT-OS-NL4"/>
@@ -439,7 +446,7 @@ of cool stuffs</string>
                         <outlet property="facebookButton" destination="et9-Ek-xuA" id="ZId-yT-6ZC"/>
                         <outlet property="forgotButton" destination="9nV-l2-15j" id="pFf-32-kgq"/>
                         <outlet property="linkedinButton" destination="FBQ-IG-ad8" id="pR4-yM-eAh"/>
-                        <outlet property="loginButton" destination="l6M-qf-TkU" id="5EB-uV-ZjP"/>
+                        <outlet property="mainLoginButton" destination="RE1-ww-aMM" id="BqF-Jb-bAd"/>
                         <outlet property="nameField" destination="VDL-BJ-hm5" id="hZP-jz-UYJ"/>
                         <outlet property="passwordField" destination="LoQ-9g-LfU" id="gb4-oj-PGU"/>
                         <outlet property="twitterButton" destination="AQO-Fx-UZD" id="Gpr-yu-qOk"/>

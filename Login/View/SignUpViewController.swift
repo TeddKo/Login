@@ -25,6 +25,11 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var forgotButton: UIButton!
     
+    @IBOutlet weak var mainLoginButton: UIButton!
+    
+    @IBAction func forgotAction(_ sender: Any) {
+        print(#function, "SignUpView Forgot Password")
+    }
     @IBAction func loginAction(_ sender: Any) {
         dismiss(animated: true)
     }
